@@ -1,0 +1,164 @@
+@font-face {
+	font-family: "titulos";
+	src: url(font/Korataki.ttf);
+  }
+  @font-face {
+	font-family: "texto";
+	src: url(font/GothamBook.ttf);
+  }
+
+*{
+	margin:0;
+	padding: 0;
+	font-family: texto; 	
+}
+
+body{
+	background: rgb(59, 58, 58) !important;
+}
+
+
+#menu{
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	background: rgb(237, 20, 91);
+	z-index: 99;
+	border-bottom: 1px solid rgb(237, 20, 91);
+}
+
+#menu ul{
+	float: right;
+}
+#menu p{
+	margin: 20px;
+	background: none;
+	font-size: 12px;
+	font-weight: 700;
+	color: rgb(255, 255, 255);
+	float: left;
+}
+
+#menu ul,li{
+	position: relative;
+	display: inline;
+	list-style: none;
+	background: none;
+	color: rgb(255, 255, 255);
+	padding: 10px 20px 0px 20px;
+}
+
+#menu ul,li,a{
+	color: rgb(255, 255, 255) !important;
+	text-decoration: none;
+	font-weight: 100;
+	transition: .5s ;
+}
+#menu ul,li,a:hover{
+	color: rgb(77, 77, 77) !important;
+	text-decoration: none;
+	font-weight: 600 !important;
+	transition: .5s ;
+}
+
+#menu ul,li,i{
+	background: none;
+	color: rgb(255,255,255);
+}
+
+
+
+#open{
+	height: 70vh;
+	background-image: url(image/produtos/dunots-05.jpg);
+	background-position: top;
+	background-size: cover;
+	border-bottom: 3px solid rgba(237, 20, 91);
+}
+
+#open .box{
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	margin-left: -250px;
+	width: 500px;
+	height: 300px;
+	color: rgb(255, 255, 255);
+	text-align: center; 
+}
+#open .box h1{
+	background: none;
+	position: relative;
+	font-weight: 100;
+	top: 10%;
+	font-family: titulos;
+}
+#open .box h1::after{
+	content: "";
+	display: block;
+	position: relative;
+	height: 2px;
+	width: 20%;
+	background: rgba(237, 20, 91);
+	left: 50%;
+	margin-left: -10%;
+	top: 20px;
+}
+#open .box #box-description{
+	position: relative;
+	margin-top: 60px;
+	background: none;
+	text-align: justify;
+	font-size: 16px;
+}
+ 
+
+
+
+#games .box{
+	position: relative;
+	width: 350px;
+	height: 300px;
+	background: rgb(255, 255, 255, .5);
+	margin: 10px 10px 10px 10px;
+} 
+
+#games .box > img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%
+}
+#games .box .box-inform{
+	position: absolute;
+	height: 75px;
+	width: 100%;
+	top: 100%;
+	margin-top: -75px;
+	padding: 10px 10px 0 10px;
+	z-index: 98;
+	background: rgb(237, 20, 91, .8);
+	color: rgb(255, 255, 255);
+}
+
+#rodape{
+	border-top: 2px solid rgba(237, 20, 85);
+	margin-top: 100px;
+	background: rgb(237, 69, 124);
+	height: 250px;
+}
+
+#rodape .table_radape{
+	position: relative;
+	top: 100px;
+	float: left;
+	background: rgb(255, 255, 255, .1);
+	padding: 20px;
+	border-radius: 5px;
+}
+
+#rodape h1{
+	position: relative;
+	float: right;
+	color: #fff;
+	top: 150px;
+}
